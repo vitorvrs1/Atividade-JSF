@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title> Formulário de Contato</title>
+	<h:outputStylesheet name="css/main.css"/>
+</head>
+<body>
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputLabel for="nome" value="Nome: "/>
+			<h:inputText id="nome" value="#{formBean.nome}" styleClass="inpuText"/>
+			
+			<h:outputLabel for="sobrenome" value="Sobrenome: "/>
+			<h:inputText id="sobrenome" value="#{formBean.sobrenome}" styleClass="inpuText"/>
+			
+			<h:outputLabel for="fone" value="Fone: "/>
+			<h:inputText id="fone" value="#{formBean.fone}" styleClass="inpuText"/>
+			
+			<h:outputLabel for="email" value="Email: "/>
+			<h:inputText id="email" value="#{formBean.email}" styleClass="inpuText"/>
+			
+			<h:commandButton value="Enviar" action="#{formBean.enviar}"/>
+		</h:panelGrid>
+	</h:form>
+</body>
+</html>

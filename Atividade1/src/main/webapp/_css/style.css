@@ -1,0 +1,45 @@
+@charset "ISO-8859-1";
+
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .foto-perfil {
+    float: right;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
